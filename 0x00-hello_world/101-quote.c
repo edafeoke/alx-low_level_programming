@@ -9,12 +9,14 @@
 int main(void)
 {
 	char string[60];
+	size_t i = 0;
 
 	strcpy(string, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 
-	for (int i = 0; i < strlen(string); i++)
+	while  (i < strlen(string))
 	{
 		putc(string[i], stderr);
+		++i;
 	}
 	putc('\n', stderr);
 	return (1);
