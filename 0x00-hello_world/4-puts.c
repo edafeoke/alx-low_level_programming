@@ -12,7 +12,6 @@ int main(void)
 
 	strcpy(string, "\"Programming is like building a multilingual puzzle\n");
 	puts(string);
-	puts('\n');
 	return (0);
 }
 
