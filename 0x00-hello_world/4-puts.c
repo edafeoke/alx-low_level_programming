@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-	char string[53];
+	char string[52];
 
 	strcpy(string, "\"Programming is like building a multilingual puzzle\n");
 	puts(string);
+	puts('\n');
 	return (0);
 }
 
