@@ -26,7 +26,7 @@ int main(void)
 					putchar(' ');
 					putchar(c + 48);
 					putchar(d + 48);
-					if ((a < (count - 1)) || (b < (count - 1)) ||
+					if ((a < (count - 1)) || (b < (count - 2)) ||
 							(c < (count - 1)) || (d < (count - 1)))
 					{
 						putchar(',');
