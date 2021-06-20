@@ -17,14 +17,10 @@ int main(void)
 	{
 		for (b = 0; b < count; ++b)
 		{
-			for (c = 0; c < count; ++c)
+			for (c = a; c < count; ++c)
 			{
-				for (d = 0; d < count; ++d)
+				for (d = ((a == c) ? (b + 1) : 0); d < count; ++d)
 				{
-					if ((a == 0) & (b == 0) & (c == 0) & (d == 0))
-					{
-						++d;
-					}
 					putchar(a + 48);
 					putchar(b + 48);
 					putchar(' ');
