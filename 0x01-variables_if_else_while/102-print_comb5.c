@@ -13,14 +13,18 @@ int main(void)
 	int d;
 	int count = 10;
 
-	for (a = 0; a < count; a++)
+	for (a = 0; a < count; ++a)
 	{
-		for (b = 0; b < count; b++)
+		for (b = 0; b < count; ++b)
 		{
-			for (c = 0; c < count; c++)
+			for (c = 0; c < count; ++c)
 			{
-				for (d = 0; d < count; d++)
+				for (d = 0; d < count; ++d)
 				{
+					if ((a == 0) & (b == 0) & (c == 0) & (d == 0))
+					{
+						++d;
+					}
 					putchar(a + 48);
 					putchar(b + 48);
 					putchar(' ');
