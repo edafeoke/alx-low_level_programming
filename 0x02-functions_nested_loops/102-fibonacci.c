@@ -7,19 +7,20 @@
  */
 int main(void)
 {
-	long int n = 1;
-	long int m = 2;
-	long int temp;
-	int count;
+	long int fib[50];
+	int c;
 
-	for (count = 0; count < 50; count++)
+	fib[1] = 2;
+	fib[0] = 1;
+	for (c = 2; c < 50; c++)
 	{
-		temp = n + m;
-		n = m;
-		m = temp;
-		printf("%ld, ", n);
-		printf("%ld", m);
-		if (count < 50)
+		fib[c] = fib[c - 1] + fib[c - 2];
+	}
+
+	for (c = 0; c < 50; c++)
+	{
+		printf("%ld", fib[c]);
+		if (c < 49)
 		{
 			printf(", ");
 		}
