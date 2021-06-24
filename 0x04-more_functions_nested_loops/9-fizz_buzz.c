@@ -30,6 +30,7 @@ int main(void)
 		if (n < 99)
 		{
 			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
