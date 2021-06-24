@@ -1,32 +1,27 @@
 #include "holberton.h"
 
 /**
- * more_numbers - Prints numbers 0 - 14 10 times
+ * print_mote_numbers - Prints numbers 0 - 14 10 times
+ *@print_to_14:print 0 to 14
  *
  * Return: void
  */
 void print_most_numbers(void)
 {
-	int i;
+	int i, j, k, l;
 
 	for (i = 0; i < 10; i++)
 	{
-		print_to_14();
-	}
-}
-
-void print_to_14(void)
-{
-	int i, j, k;
-	for (i = 0; i < 15; i++)
-	{
-		j = i / 10;
-		k = i % 10;
-		if (j != 0)
+		for (j = 0; j < 15; j++)
 		{
-			_putchar(j + 48);
+			k = j /10;
+			l = j % 10;
+			if (k != 0)
+			{
+				_putchar(k + 48);
+			}
+			_putchar(l + 48);
 		}
-		_putchar(k + 48);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
