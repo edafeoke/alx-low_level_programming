@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- * print_mote_numbers - Prints numbers 0 - 14 10 times
- *@print_to_14:print 0 to 14
+ * more_numbers - Prints numbers 0 - 14 10 times
  *
  * Return: void
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i, j, k, l;
 
@@ -14,7 +13,7 @@ void print_most_numbers(void)
 	{
 		for (j = 0; j < 15; j++)
 		{
-			k = j /10;
+			k = j / 10;
 			l = j % 10;
 			if (k != 0)
 			{
