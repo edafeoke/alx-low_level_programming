@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand();
-	printf("%d", n);
+	printf("%d\n", n);
 	return (0);
 }
 
