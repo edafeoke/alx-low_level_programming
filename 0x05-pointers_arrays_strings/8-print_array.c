@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+ * print_array - Prints n ements from an array
  * @a: pointer to the array
  * @n: Number of elements to print
  *
@@ -14,7 +15,7 @@ void print_array(int *a, int n)
 	while (count < a[n])
 	{
 		printf("%d", a[n]);
-		if (count < n-1)
+		if (count < n - 1)
 		{
 			printf(", ");
 		}
