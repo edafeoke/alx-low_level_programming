@@ -35,7 +35,7 @@ void puts_half(char *s)
 	}
 	else
 	{
-		n = (lenght - 1) / 2
+		n = (lenght - 1) / 2;
 
 	while (s[n])
 	{
