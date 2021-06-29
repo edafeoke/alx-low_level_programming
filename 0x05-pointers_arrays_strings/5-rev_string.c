@@ -32,7 +32,7 @@ void rev_string(char *s)
 
 	while (j < i / 2)
 	{
-		tmp = s[i];
+		tmp = s[j];
 		s[j] = s[i - 1 - j];
 		s[i - 1 - j] = tmp;
 		j++;
