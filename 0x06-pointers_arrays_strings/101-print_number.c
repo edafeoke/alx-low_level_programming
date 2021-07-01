@@ -20,7 +20,7 @@ void print_number(int n)
 	else
 	{
 		int x = n;
-		
+
 		n = n / 10;
 		if (n > 0)
 		{
