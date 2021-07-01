@@ -21,6 +21,7 @@ char *rot13(char *c)
 			if (c[i] == alphas[j])
 			{
 				c[i] = codes[j];
+				break;
 			}
 			j++;
 		}
