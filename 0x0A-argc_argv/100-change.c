@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int count = 0;
 	int tmp = atoi(argv[1]);
 
-	if (argc == 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
