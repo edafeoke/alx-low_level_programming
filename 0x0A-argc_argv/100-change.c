@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	if (tmp < 0)
+	{
+		tmp = 0;
+	}
 	while (tmp > 0)
 	{
 		if (tmp >= cent[i])
