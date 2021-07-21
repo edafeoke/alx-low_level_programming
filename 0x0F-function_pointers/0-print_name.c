@@ -1,6 +1,7 @@
 #include "function_pointers.h"
 
-/*print_name - print a name from a filter function
+/**
+ * print_name - print a name from a filter function
  * @name: The name to print
  * @f: filter functio
  *
