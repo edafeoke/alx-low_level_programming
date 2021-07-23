@@ -2,6 +2,8 @@
 
 /**
  * main - Entry file
+ * @argc: arguments count
+ * @argv: arguments array
  *
  * Return: 0 (Success)
  */
