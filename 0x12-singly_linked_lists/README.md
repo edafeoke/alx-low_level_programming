@@ -14,7 +14,7 @@
 ## Files description
 | Name | Description | Usage |
 | ---- | ----------- | ----- |
-| 0-print_list.c | A function that prints all elements of a list | ``` print_list(head); ```
+| 0-print_list.c | A function that prints all elements of a list | ``` print_list(head); ``` Where 'head' is the startint point of the list |
 | 1-list_len.c | Returns the length of a list |
 | 2-add_node.c | Adds node to the start of a list |
 | 3-add_node_end.c | Adds node to the end of a list | 
