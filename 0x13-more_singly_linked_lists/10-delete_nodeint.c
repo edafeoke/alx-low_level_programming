@@ -9,30 +9,37 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *current;
+	listint_t *prev;
 	listint_t *temp;
+	unsigned int i;
 
 	if (!head || *head || index)
 		return (-1);
 	temp = malloc(sizeof(temp));
-	current = malloc(sizeof(current));
-	if(!temp || !current)
+	prev = malloc(sizeof(prev));
+	if (!temp || !prev)
 	{
 		free(temp);
-		free(current);
+		free(prev);
 		return (-1);
 	}
-	for (temp = *head; index > 0 && temp != NULL; index--)
+	temp = *head;
+	for (i = 0; i < index; i++)
 	{
-		current = temp;
+		prev = temp;
 		temp = temp->next;
 	}
-	if (!temp)
-		return (-1);
 	if (temp == *head)
 		*head = temp->next;
 	else
-		current->next = temp->next;
+		prev->next = temp->next;
+	temp = *head;
+	for (i = 0; i < index - 1; i++)
+	{
+		temp = temp->next;
+	}
+	temp->next = prev->next;
+	*head = temp;
 	free(temp);
 	return (1);
 }
