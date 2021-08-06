@@ -6,7 +6,7 @@
  *
  * Return: Lenght of string
  */
-unsigned int _strlen(char *s)
+unsigned int _strlen(const char *s)
 {
 	if (*s == '\0')
 	{
@@ -46,10 +46,8 @@ int _pow(int x, int y)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len, i, n = 0;
-	char *s = malloc(sizeof(b));
        
-	strcpy(s, b);
-	len = _strlen(s);
+	len = _strlen(b);
 	if (len == 0)
 		return (0);
 	for (i = 0; i < len; i++)
@@ -61,6 +59,5 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] == '1')
 			n += _pow(2, c);
 	}
-	free(s);
 	return (n);
 }
