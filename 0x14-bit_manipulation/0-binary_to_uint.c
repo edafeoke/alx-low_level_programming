@@ -54,10 +54,12 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	for (i = 0; i < len; i++)
 	{
+		unsigned int c = len - (i + 1);
+
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 		if (b[i] == '1')
-			n += _pow(2, i);
+			n += _pow(2, c);
 	}
 	free(s);
 	return (n);
