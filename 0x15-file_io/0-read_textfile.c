@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * read_textfile - Reads a text file and 
+ * read_textfile - Reads a text file and
  * writes to standard output (POSIX)
  * @filename: pointer to filename
  * @letters: number of leeters to read
