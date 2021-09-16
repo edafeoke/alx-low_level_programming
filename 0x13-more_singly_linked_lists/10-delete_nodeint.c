@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - insert node
+ *  - insert node
  * @head: pointer t0 head
  * @index: index
  *

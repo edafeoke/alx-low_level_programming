@@ -14,6 +14,9 @@ int main(void)
     printf("%u\n", n);
     n = binary_to_uint("101");
     printf("%u\n", n);
+    n = binary_to_uint("101011001000111011111111110000011111101010010101010101010101011");
+    printf("%u\n", n);
+
     n = binary_to_uint("1e01");
     printf("%u\n", n);
     n = binary_to_uint("1100010");
