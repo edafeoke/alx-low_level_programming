@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint - return no of elements of a doubly linkef list
- * @h: head
+ * @head: head
  * @n: value
  *
  * Return: pointer to new list
