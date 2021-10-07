@@ -2,7 +2,7 @@
 
 /**
  * hash_table_create - a function that creates a hash table
- * size: the size of the array
+ * @size: the size of the array
  *
  * Return: Pointer to newly created hash table
  */
